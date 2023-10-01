@@ -3,15 +3,14 @@ package rdelatorre;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import java.awt.Font;
 
 public class salesList {
 
-	private JFrame frame;
+	private JFrame frmSalesList;
 
 	/**
 	 * Launch the application.
-	 * 
-	 * TEST
 	 * 
 	 * 
 	 */
@@ -20,7 +19,7 @@ public class salesList {
 			public void run() {
 				try {
 					salesList window = new salesList();
-					window.frame.setVisible(true);
+					window.frmSalesList.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -39,9 +38,11 @@ public class salesList {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmSalesList = new JFrame();
+		frmSalesList.setFont(new Font("American Typewriter", Font.PLAIN, 18));
+		frmSalesList.setTitle("SALES LIST");
+		frmSalesList.setBounds(100, 100, 450, 300);
+		frmSalesList.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 }
